@@ -12,6 +12,8 @@ app.use('/surat', require('./disposisi'));
 app.use('/surat', require('./update_status'));
 app.use('/surat', require('./konfirmasi'));
 app.use('/surat', require('./kirim_divisi'));
+app.use('/surat', require('./get_divisi'));       // <-- Tambah GET divisi
+app.use('/surat', require('./get_subdivisi'));    // <-- nanti untuk sub divisi
 
 // Serve static (kalau perlu)
 app.use(express.static(path.join(__dirname, 'public')));
